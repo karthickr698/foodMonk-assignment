@@ -9,6 +9,9 @@ import Payment from '../Components/common/Payment';
 import Register from '../Components/auth/Register';
 import Login from '../Components/auth/Login';
 import Profile from '../Components/common/Profile'
+import OrderedDatas from '../Components/common/OrderedDatas'
+import Print from '../Components/common/print'
+import { logout } from "../Redux/userAction";
 
 
 class Routing extends Component {
@@ -17,7 +20,7 @@ class Routing extends Component {
         return (
             <>
                 <div className=" p-3">
-                    <h2 className="text-center display-5">Vehicle Renting</h2>
+                    <h2 className="text-center display-5">Food Delivery</h2>
                     <ul className="nav">
                         <li className="image img-fluid">
                             <img height="100px" className="nav-img" src={logos} alt="." />
@@ -77,7 +80,7 @@ class Routing extends Component {
                                         >
                                             <Link to="/register" className="text-dark nav-link">
                                                 Register
-                    </Link>
+                                            </Link>
                                         </li>
                                         <li
                                             className="nav-item"
@@ -85,7 +88,7 @@ class Routing extends Component {
                                         >
                                             <Link to="/login" className="text-dark nav-link">
                                                 Login
-                    </Link>
+                                            </Link>
                                         </li>
                                     </div>
                                 )}
@@ -101,7 +104,8 @@ class Routing extends Component {
                             component={(props) => <Register {...props} />}
                         />
                         <Route path="/login" component={(props) => <Login {...props} />} />
-                        <Route exact path="/booking" component={() => <Booking />} />
+                        <Route exact path="/booking" component={() => <OrderedDatas />} />
+                        <Route exact path="/print" component={() => <Print />} />
                         <Route exact path="/user" component={() => <Profile />} />
                         <Route
                             exact
@@ -109,7 +113,7 @@ class Routing extends Component {
                             component={(props) => <Booking {...props} />}
                         />
                         <Route
-                            path="/booking/:name/pay"
+                            path="/pay"
                             component={(props) => <Payment {...props} />}
                         />
                         <Route render={() => <div>404 Not Fount</div>} />
@@ -121,9 +125,11 @@ class Routing extends Component {
 }
 
 const mapStateToProps = state => ({
+    isauth: state.user.isauth,
 })
 
 const mapDispatchToProps = dispatch => ({
+    logout: () => dispatch(logout()),
 })
 
 

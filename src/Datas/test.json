@@ -5,8 +5,14 @@
             "name": "Akshay",
             "email": "akshay37@gmail.com",
             "mobile": "9137423734",
-            "password": "someStrongPass",
-            "history": []
+            "password": "someStrongPass"
+        },
+        {
+            "userId": 1,
+            "name": "karthick",
+            "email": "karthick@gmail.com",
+            "mobile": "9137423734",
+            "password": "12345678"
         }
     ],
     "hotels": [
@@ -81,7 +87,7 @@
         {
             "id": 2,
             "name": "ABS",
-            "rating": 4.5,
+            "rating": 3.5,
             "location": "chennai",
             "foods": [
                 {
@@ -149,7 +155,7 @@
         {
             "id": 3,
             "name": "Black Perl",
-            "rating": 4.5,
+            "rating": 4.8,
             "location": "chennai",
             "foods": [
                 {
@@ -217,7 +223,7 @@
         {
             "id": 4,
             "name": "Coal",
-            "rating": 4.5,
+            "rating": 4.0,
             "location": "chennai",
             "foods": [
                 {
