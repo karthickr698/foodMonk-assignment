@@ -1,9 +1,10 @@
+import datas from '../Datas/test.json'
 import { BOOKING_DATA } from './actionTypes'
 
 const initState = {
-    data: [],
+    Hoteldata: [...datas.hotels],
 }
-console.log(initState.data)
+console.log(initState)
 const foodReducer = (state = initState, action) => {
     switch (action.type) {
         default:
