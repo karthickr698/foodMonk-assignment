@@ -1,68 +1,37 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was created with React [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
 
-In the project directory, you can run:
+## Overview of The Assignment:
+Design and implement a user interface that allows a user to view a list of hardcoded
+hotels from a json data. On clicking on any hotel, it will display available foods. On clicking add food it will add to cart and when view cart is clicked it will redirect to payment page. After payment the foods will get booked. It has booking and profile page. In booking page the user will be able to print the booking data. And also register and login is integrated. 
+<br>
+<br>
+<a href = "https://foodmonk-app.netlify.app/">
+  <button style = "background:red,padding:5px">Demo Link of the assignment</button>
+</a>
 
-### `npm start`
+To get started and know better here is the list of the features build inside this application
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+1.Dashboard where you will get the list of all the hotels.
+<p> <img src  = "/public/home.png"> </p>
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+2.Listing page where it will display all available foods.
+<p> <img src  = "/public/listing.png"> </p>
 
-### `npm test`
+3.Payment page where it will display all cart items .
+<p> <img src  = "/public/pay.png"> </p>
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+4.Booking history page where it will display all the booking details.
+<p> <img src  = "/public/book.png"> </p>
 
-### `npm run build`
+5.Profile page where it will display the User details.
+<p> <img src  = "/public/user.png"> </p>
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Getting Started Follow this simple steps to start using this application
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+### Client
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+1.   git clone https://github.com/karthickr698/foodMonk-assignment
+2.   cd foodMonk/
+3.   npm install
+4.   npm start
