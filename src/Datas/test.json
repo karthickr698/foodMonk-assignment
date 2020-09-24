@@ -5,7 +5,9 @@
             "name": "Akshay",
             "email": "akshay37@gmail.com",
             "mobile": "9137423734",
-            "password": "someStrongPass"
+            "password": "someStrongPass",
+            "age": 20,
+            "address": "chennai"
         },
         {
             "userId": 1,

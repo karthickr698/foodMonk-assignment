@@ -78,12 +78,12 @@ const foodReducer = (state = initState, action) => {
             }
         case DELETE_ITEMS:
             let reduce_item = []
-            let reduce_amt = Number(state.amount)
+            let reduce_amt = state.amount
             for (let i = 0; i < state.food_data.length; i++) {
                 let items = state.food_data[i]
                 if (items.id == action.payload) {
                     items.quantity = items.quantity - 1
-                    reduce_amt = reduce_amt - (items.price)
+                    reduce_amt = reduce_amt - (items.rate)
                 }
                 reduce_item.push(items)
             }

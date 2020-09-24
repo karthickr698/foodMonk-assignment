@@ -15,7 +15,7 @@ function Profile({ user_data, isauth }) {
                         <p className="card-text text-center">Age : {user_data[0].age}</p>
                         <p className="card-text text-center">Email : {user_data[0].email}</p>
                         <p className="card-text text-center">Mobile : {user_data[0].mobile}</p>
-                        <p className="card-text text-center">License No : {user_data[0].lisenceId}</p>
+                        <p className="card-text text-center">Address : {user_data[0].address}</p>
                         <hr />
 
                         <Link to='/' style={{ textDecoration: "none" }}>
