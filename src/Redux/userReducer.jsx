@@ -17,6 +17,8 @@ const userReducer = (state = initState, action) => {
 
     switch (action.type) {
         case REGISTER_USER:
+            const serializedState = JSON.stringify(state.user_data[0]);
+            localStorage.setItem('user', serializedState);
             return {
                 ...state,
                 isauth: true,
@@ -29,6 +31,8 @@ const userReducer = (state = initState, action) => {
                 state.user_data[0].email === action.email &&
                 state.user_data[0].password === action.pwd
             ) {
+                const serializedState = JSON.stringify(state.user_data[0]);
+                localStorage.setItem('user', serializedState);
                 return {
                     ...state,
                     isauth: true,
